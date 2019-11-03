@@ -1,0 +1,16 @@
+{
+    "name": "mougrim/php-composer-patches-example",
+    "description": "It's an example for article with using forks and patches for changing dependencies",
+    "type": "library",
+    "homepage": "https://github.com/mougrim/php-composer-patches-example",
+    "require": {
+        "phpunit/phpunit": "^8.4.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mougrim",
+            "email": "rinat@mougrim.ru"
+        }
+    ]
+}
