@@ -1,0 +1,12 @@
+diff --git a/src/CodeCoverage.php b/src/CodeCoverage.php
+index 2c92ae2..514171e 100644
+--- a/src/CodeCoverage.php
++++ b/src/CodeCoverage.php
+@@ -190,6 +190,7 @@ public function filter(): Filter
+      */
+     public function getData(bool $raw = false): array
+     {
++        // for example some changes here
+         if (!$raw && $this->addUncoveredFilesFromWhitelist) {
+             $this->addUncoveredFilesFromWhitelist();
+         }
