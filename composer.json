@@ -4,7 +4,19 @@
     "type": "library",
     "homepage": "https://github.com/mougrim/php-composer-patches-example",
     "require": {
-        "phpunit/phpunit": "^8.4.2"
+        "phpunit/phpunit": "^8.4.2",
+        "cweagans/composer-patches": "^1.6.7"
+    },
+    "config": {
+        "preferred-install": "source"
+    },
+    "extra": {
+        "patches": {
+            "phpunit/php-code-coverage": {
+                "My fix description": "patches/phpunit/php-code-coverage/myFix.patch"
+            }
+        },
+        "enable-patching": true
     },
     "license": "MIT",
     "authors": [
