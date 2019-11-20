@@ -4,7 +4,8 @@
     "type": "library",
     "homepage": "https://github.com/mougrim/php-composer-patches-example",
     "require": {
-        "phpunit/phpunit": "^8.4.2"
+        "phpunit/phpunit": "^8.4.2",
+        "phpunit/php-code-coverage": "dev-7.0.8-myFix as 7.0.8"
     },
     "license": "MIT",
     "authors": [
@@ -12,5 +13,11 @@
             "name": "Mougrim",
             "email": "rinat@mougrim.ru"
         }
-    ]
+    ],
+    "repositories": {
+        "phpunit/php-code-coverage": {
+            "type": "vcs",
+            "url": "https://github.com/mougrim/php-code-coverage.git"
+        }
+    }
 }
